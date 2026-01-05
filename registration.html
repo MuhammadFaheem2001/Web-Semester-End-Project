@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+<style>
+
+body{
+    min-height: 100vh;
+}
+
+/* ===== ORIGINAL STYLES (UNCHANGED) ===== */
+
+.form-2{
+    background-color: burlywood;
+    border: 2px solid black;
+    border-radius: 24px;
+    text-align: center;
+    width: 500px;
+    height: 497px;
+    margin: 50px 0px 0px 456px;
+}
+
+h1{
+    text-align: center;
+    font-style: italic;
+}
+
+.Register-page{
+    margin-top: 25px;
+}
+
+.Register-page input{
+    margin: 9px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.Register-page p a{
+    margin-left: 21px;
+}
+
+.button-submit{
+    width: 180px;
+}
+
+/* ===== RESPONSIVE FIX (ADDED ONLY) ===== */
+
+/* Tablets */
+@media (max-width: 1024px){
+    .form-2{
+        margin: 80px auto;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px){
+    .form-2{
+        width: 90%;
+        height: auto;
+        margin: 60px auto;
+        padding: 20px;
+    }
+
+    .Register-page input{
+        width: 90%;
+    }
+
+    .button-submit{
+        width: 70%;
+    }
+
+    .Register-page p a{
+        margin-left: 0;
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+    <div class="form-2">
+        <h1>Registration Form</h1>
+
+        <form action="" class="Register-page" method="post">
+
+            <label style="font-weight: bold;">Full Name</label><br>
+            <input type="text" name="Full-Name" placeholder="Enter Your Name" required><br><br>
+
+            <label style="font-weight: bold;">Age</label><br>
+            <input type="text" name="Age" placeholder="Enter Your Age" required><br><br>
+
+            <label style="font-weight: bold;">Email</label><br>
+            <input type="email" name="email" placeholder="Enter Your Email" required><br><br>
+
+            <label style="font-weight: bold;">Gender</label><br>
+            <label>Male</label>
+            <input type="checkbox">
+            <label>Female</label>
+            <input type="checkbox"><br><br>
+
+            <input type="submit" class="button-submit" value="Submit" style="font-weight: bold;">
+
+            <p>
+                <a href="login.html" target="_blank">
+                    If User Click Here TO Login?
+                </a>
+            </p>
+
+        </form>
+    </div>
+
+</body>
+</html>
